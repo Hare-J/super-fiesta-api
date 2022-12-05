@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\MovesController.cs" />
+    <Compile Remove="Models\Battle.cs" />
+    <Compile Remove="Models\DTOs\MoveDTO.cs" />
+    <Compile Remove="Models\DTOs\PokemonPokemonTypeDTO.cs" />
+    <Compile Remove="Models\DTOs\PokemonTypeDTO.cs" />
+    <Compile Remove="Models\MetaData\MoveMetaData.cs" />
+    <Compile Remove="Models\MetaData\PokemonPokemonTypeMetaData.cs" />
+    <Compile Remove="Models\MetaData\PokemonTypeMetaData.cs" />
+    <Compile Remove="Models\Move.cs" />
+    <Compile Remove="Models\PokemonPokemonType.cs" />
+    <Compile Remove="Models\PokemonType.cs" />
+    <Compile Remove="Models\StatusEffect.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Controllers\MovesController.cs" />
+    <None Include="Models\!Battle_NotImplemented\Battle.cs" />
+    <None Include="Models\!Battle_NotImplemented\StatusEffect.cs" />
+    <None Include="Models\!Battle_NotImplemented\PokemonPokemonTypeDTO.cs" />
+    <None Include="Models\!Battle_NotImplemented\PokemonTypeDTO.cs" />
+    <None Include="Models\!Battle_NotImplemented\PokemonPokemonTypeMetaData.cs" />
+    <None Include="Models\!Battle_NotImplemented\PokemonTypeMetaData.cs" />
+    <None Include="Models\!Battle_NotImplemented\PokemonPokemonType.cs" />
+    <None Include="Models\!Battle_NotImplemented\PokemonType.cs" />
+    <None Include="Models\DTOs\MoveDTO.cs" />
+    <None Include="Models\MetaData\MoveMetaData.cs" />
+    <None Include="Models\Move.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.24">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,10 @@
+﻿Add-Migration -o Data\PMigrations Initial
+Update-Database 
+
+Add to migration:
+ExtraMigration.Steps(migrationBuilder)
+
+	Install-Package Microsoft.EntityFrameworkCore.Sqlite -v 3.1.22
+	Install-Package Microsoft.EntityFrameworkCore.Tools -v 3.1.22
+
+	Install-Package Swashbuckle.AspNetCore -v 5.6.3
